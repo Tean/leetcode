@@ -1,6 +1,6 @@
-package com.netteans.leetcode;
+package com.netteans.leetcode.no7.reverse;
 
-public class ReverseInteger {
+public class Solution {
     public int reverse(int x) {
         int[] ars = new int[0];
         do {
@@ -26,7 +26,6 @@ public class ReverseInteger {
                 return 0;
             }
         }
-
         return (int) r;
     }
 }
