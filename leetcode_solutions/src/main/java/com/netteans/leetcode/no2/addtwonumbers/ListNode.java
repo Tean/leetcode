@@ -1,5 +1,7 @@
-package com.netteans.leetcode.addTwoNumbers;
+package com.netteans.leetcode.no2.addtwonumbers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,7 +13,7 @@ public class ListNode {
 
     ListNode next;
 
-    ListNode(int x) {
+    ListNode(@Value("0") int x) {
         val = x;
     }
 }

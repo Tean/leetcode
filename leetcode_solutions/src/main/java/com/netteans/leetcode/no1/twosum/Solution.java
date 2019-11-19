@@ -1,4 +1,4 @@
-package com.netteans.leetcode.twoSum;
+package com.netteans.leetcode.no1.twosum;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.netteans.leetcode.addTwoNumbers;
+package com.netteans.leetcode.no2.addtwonumbers;
 
 import org.springframework.stereotype.Component;
 

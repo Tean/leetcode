@@ -1,4 +1,4 @@
-package com.netteans.leetcode.lengthOfLongestSubstring;
+package com.netteans.leetcode.no3.lengthoflongestsubstring;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

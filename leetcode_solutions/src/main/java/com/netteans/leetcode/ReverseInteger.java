@@ -1,8 +1,6 @@
 package com.netteans.leetcode;
 
 public class ReverseInteger {
-
-
     public int reverse(int x) {
         int[] ars = new int[0];
         do {

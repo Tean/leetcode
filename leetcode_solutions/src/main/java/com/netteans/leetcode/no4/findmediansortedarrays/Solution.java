@@ -1,4 +1,4 @@
-package com.netteans.leetcode.findMedianSortedArrays;
+package com.netteans.leetcode.no4.findmediansortedarrays;
 
 import org.springframework.stereotype.Component;
 

@@ -23,11 +23,11 @@ configuration:
               onMatch: "NEUTRAL"
               onMismatch: "DENY"
             - level: "DEBUG"
-              onMatch: "NEUTRAL"
+              onMatch: "ACCEPT"
               onMismatch: "DENY"
             - level: "INFO"
               onMatch: "ACCEPT"
-              onMismatch: "DENY"
+              onMismatch: "NEUTRAL"
             - level: "WARN"
               onMatch: "ACCEPT"
               onMismatch: "ACCEPT"
@@ -229,7 +229,6 @@ configuration:
     root:
       level: "all"
       AppenderRef:
-        - ref: "Console"
         - ref: "DebugFile"
         - ref: "InfoFile"
         - ref: "WarnFile"
@@ -241,3 +240,15 @@ configuration:
       - name: "scheduler"
         AppenderRef:
           - ref: "scheduler"
+      - name: "org.springframework"
+        level: "ERROR"
+        AppenderRef:
+          - ref: "Console"
+      - name: "com.netteans"
+        level: "DEBUG"
+        AppenderRef:
+          - ref: "Console"
+          - ref: "DebugFile"
+          - ref: "InfoFile"
+          - ref: "WarnFile"
+          - ref: "ErrorFile"
